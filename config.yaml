@@ -1,0 +1,11 @@
+---
+title: "Utkarsh Sinha"
+contentdir: "content"
+layoutdir: "layouts"
+publishdir: "public"
+indexes:
+  category: "categories"
+  tag: "tags"
+baseurl: "http://utkarshsinha.com"
+canonifyurls: true
+---

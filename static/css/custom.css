@@ -1,0 +1,82 @@
+li.tool-opencv {
+  padding-left: 16px;
+  background: url(/images/opencv.png) no-repeat;
+}
+
+li.tool-ffmpeg {
+  padding-left: 16px;
+  background: url(/images/ico-ffmpeg.png) no-repeat;
+  background-size: 16px 16px;
+}
+
+li.author-social-linkedin {
+  background: url(/images/ico-linkedin.png) no-repeat 0px;
+  padding-left: 20px;
+}
+
+li.author-social-github {
+  background: url(/images/ico-github.png) no-repeat 0px;
+  padding-left: 20px;
+}
+
+li.author-social-twitter {
+  background: url(/images/ico-twitter.png) no-repeat 0px;
+  padding-left: 20px;
+}
+
+.site-title {
+  float: left;
+  font-size: 36px;
+}
+
+nav {
+  float: left;
+  text-shadow: rgba(192,192,192,0.75) -1px -1px 0px;
+  padding-left: 20px;
+}
+
+nav ul > li {
+  display: inline-block;
+}
+
+nav ul > li > a {
+  color: #565656;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right:0.75em;
+}
+
+.clear-both {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+#sidebar p {
+  text-align: center;
+}
+
+#content .intro {
+  padding-left: 20px;
+}
+
+content > ul {
+  padding-left: 20px;
+}
+
+div.intro h2 {
+   font-size: 3em;
+   display: block;
+   padding-bottom: 20px;
+}
+
+.is-post {
+    padding-bottom: 1em;
+}
+
+#sidebar section:before {
+    display: none;
+}
+
+#sidebar {
+    padding-top: 0;
+}
