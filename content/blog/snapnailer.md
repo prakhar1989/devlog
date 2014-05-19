@@ -7,7 +7,9 @@ categories:
 tools:
   - "opencv"
   - "ffmpeg"
-  - "C/C++"
+  - "cpp"
+brief: "My custom thumbnail creator"
+summary: "I made a smart thumbnailing system for unix machines. It uses a bit of image processing"
 ---
 
 I found a way to use OpenCV in everyday life - a thumbnailer. Why is this required, you might ask?

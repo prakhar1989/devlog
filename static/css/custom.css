@@ -1,12 +1,25 @@
+div.tool-list {
+    float: right;
+}
+
+div.tool-list li {
+    display: inline-block;
+    margin-left: 1em;
+    padding-left: 20px;
+    background-position: 0px 4px;
+    background-repeat: no-repeat;
+}
+
 li.tool-opencv {
-  padding-left: 16px;
-  background: url(/images/opencv.png) no-repeat;
+  background: url(/images/ico-opencv.png);
 }
 
 li.tool-ffmpeg {
-  padding-left: 16px;
-  background: url(/images/ico-ffmpeg.png) no-repeat;
-  background-size: 16px 16px;
+  background: url(/images/ico-ffmpeg.png);
+}
+
+li.tool-cpp {
+  background: url(/images/ico-cpp.png);
 }
 
 li.author-social-linkedin {
@@ -57,6 +70,7 @@ nav ul > li > a {
 
 #content .intro {
   padding-left: 20px;
+  float: left;
 }
 
 content > ul {
@@ -71,6 +85,7 @@ div.intro h2 {
 
 .is-post {
     padding-bottom: 1em;
+    padding-left: 20px;
 }
 
 #sidebar section:before {
@@ -79,4 +94,10 @@ div.intro h2 {
 
 #sidebar {
     padding-top: 0;
+}
+
+.date {
+    float: right;
+    clear: right;
+    color: #999;
 }

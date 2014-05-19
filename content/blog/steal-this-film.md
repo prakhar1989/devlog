@@ -2,6 +2,7 @@
 title: "Steal this film"
 date: "2008-07-15"
 summary: "Instead of stopping people from pirating things, make it easier for them to access your creative content"
+brief: "Don't come in the way of people consuming media"
 ---
 
 I recently stumbled upon this website… http://www.stealthisfilm.com. The films, or rather, documentaries, they’ve made are really good… thought provoking. They’re not about how to stop piracy or how it causes millions of dollars of losses every year. Rather its about how the new “distrubution model” (torrents, gnutella, etc) and why big productions houses are opposing it.

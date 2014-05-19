@@ -2,17 +2,28 @@
 {{ template "theme/navbar.html" . }}
 
 <!-- Post -->
-<article class="is-post is-post-excerpt">
- <header>
+ <div class='intro'>
           <!--
            Note: Titles and bylines will wrap automatically when necessary, so don't worry
            if they get too long. You can also remove the "byline" span entirely if you don't
            need a byline.
           -->
   <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <span class="byline">{{ .Description }}</span>
- </header>
- <hr/>
+  <p>{{ .Params.brief }}</p>
+ </div>
+  {{ if .Params.tools }}
+   <div class="tool-list">
+    <ul>
+     {{ range .Params.tools }}
+       <li class="tool-{{.}}">{{ . }}</li>
+     {{ end }}
+    </ul>
+   </div>
+
+  {{ end }}
+
+ <span class="date"><span class="month">{{ .Date.Month }}</span> <span class="day">{{ .Date.Day }}</span><span class="year">, {{ .Date.Year }}</span></span>
+ <hr class="clear-both"/>
  <div class="info">
           <!--
            Note: The date should be formatted exactly as it's shown below. In particular, the
@@ -22,28 +33,12 @@
            the entire "date" element.
            
           -->
- <span class="date"><span class="month">Jan<span>uary</span></span> <span class="day">14</span><span class="year">, 2013</span></span>
-          <!--
-           Note: You can change the number of list items in "stats" to whatever you want.
-          -->
-  <ul class="stats">
-   <li><a href="#" class="fa fa-comment">16</a></li>
-   <li><a href="#" class="fa fa-heart">32</a></li>
-   <li><a href="#" class="fa fa-twitter">64</a></li>
-   <li><a href="#" class="fa fa-facebook">128</a></li>
-  </ul>
  </div>
+<article class="is-post is-post-excerpt">
  {{ if .Params.postimage }}
  <a href="#" class="image image-full"><img src="{{ .Params.postimage }}" alt="" /></a>
  {{ end }}
  {{ if .Params.tools }}
-   <div class="tool-list">
-    <ul>
-     {{ range .Params.tools }}
-       <li class="tool-{{.}}">{{ . }}</li>
-     {{ end }}
-    </ul>
-   </div>
  {{ end }}
  {{ .Content }}
 </article>
