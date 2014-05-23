@@ -18,6 +18,14 @@ li.tool-ffmpeg {
   background: url(/images/ico-ffmpeg.png);
 }
 
+li.tool-twisted {
+  background: url(/images/ico-twisted.png);
+}
+
+li.tool-pyqt {
+  background: url(/images/ico-qt.gif);
+}
+
 li.tool-cpp {
   background: url(/images/ico-cpp.png);
 }
