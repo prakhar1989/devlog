@@ -1,0 +1,17 @@
+{{ template "theme/header.html" . }}
+{{ template "theme/navbar.html" . }}
+ <content class="8u">
+  <div class="intro">
+   <h2>Projects</h2>
+   <p>Here's a list of side projects I've worked on in the past.<br/>This is in more or less a reverse chronological order.</p>
+  </div>
+  <hr class="clear-both"/>
+  <ul>
+   {{ range .Data.Pages }}
+    {{ .Render "summary" }}
+   {{ end }}
+  </ul>
+ </content>
+      
+    {{ template "theme/sidebar.html" . }}
+{{ template "theme/footer.html" . }}

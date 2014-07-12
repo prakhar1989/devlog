@@ -1,0 +1,17 @@
+{{ template "theme/header.html" . }}
+{{ template "theme/navbar.html" . }}
+ <content class="8u">
+  <div class="intro">
+   <h2>About</h2>
+   <p>Well, here's an egotistical biography written from in the third person</p>
+  </div>
+  <hr class="clear-both"/>
+  <ul>
+   {{ range first 1 .Data.Pages }}
+    {{ .Render "single" }}
+   {{ end }}
+  </ul>
+ </content>
+      
+    {{ template "theme/sidebar.html" . }}
+{{ template "theme/footer.html" . }}
