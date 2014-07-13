@@ -1,3 +1,11 @@
+/* Color scheme:
+ * #55000D
+ * #B83737
+ * #FFCD76
+ * #FFFD7B
+ * #646A8F
+ */
+
 div.tool-list {
     float: right;
 }
@@ -33,21 +41,35 @@ li.tool-cpp {
 li.author-social-linkedin {
   background: url(/images/ico-linkedin.png) no-repeat 0px;
   padding-left: 20px;
+  list-style: none;
 }
 
 li.author-social-github {
   background: url(/images/ico-github.png) no-repeat 0px;
   padding-left: 20px;
+  list-style: none;
 }
 
 li.author-social-twitter {
   background: url(/images/ico-twitter.png) no-repeat 0px;
   padding-left: 20px;
+  list-style: none;
 }
 
 .site-title {
   float: left;
-  font-size: 36px;
+  font-size: 24px;
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.site-title:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d14e4e;
 }
 
 nav {
@@ -108,4 +130,84 @@ div.intro h2 {
     float: right;
     clear: right;
     color: #999;
+}
+
+
+
+
+/* 8888888888888888888888888888888 */
+@media (min-width: 1200px) {
+  .container {
+      width: 970px;
+    }
+
+}
+
+.blog-masthead {
+  background-color: #B83737;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+.blog-nav {
+  float: right;
+}
+
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  font-weight: 200;
+  font-size: 17px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.blog-masthead span {
+  margin-right: 6px;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #d14e4e;
+}
+
+section.sidebar {
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:#f5f6f6;
+}
+
+body> .container {
+  background-color:#fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.blog-footer {
+  text-align: center;
+  color: #fff;
+  background-color: #55000D;
+  height: 4em;
+}
+
+.blog-footer p {
+  padding-top: 1.2em;
+}
+
+.blog-footer a {
+  color: #FFCD76;
+}
+
+.list-date {
+  font-family: monospace;
+}
+
+.post-list-item {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style: none;
 }
