@@ -57,12 +57,10 @@ li.author-social-twitter {
 }
 
 .site-title {
-  float: left;
   font-size: 24px;
   color: #787878;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10px;
   padding-right: 10px;
   text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.25);
 }
@@ -75,7 +73,6 @@ li.author-social-twitter {
 nav {
   float: left;
   text-shadow: rgba(192,192,192,0.75) -1px -1px 0px;
-  padding-left: 20px;
 }
 
 nav ul > li {
@@ -98,8 +95,7 @@ nav ul > li > a {
   text-align: center;
 }
 
-#content .intro {
-  padding-left: 20px;
+content .intro {
   float: left;
 }
 
@@ -107,15 +103,13 @@ content > ul {
   padding-left: 20px;
 }
 
-div.intro h2 {
-   font-size: 3em;
+content h2 {
+   font-size: 2em;
    display: block;
-   padding-bottom: 20px;
 }
 
 .is-post {
     padding-bottom: 1em;
-    padding-left: 20px;
 }
 
 #sidebar section:before {
@@ -151,10 +145,6 @@ div.intro h2 {
 /*  background-color: #B83737;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);*/
-}
-
-.blog-nav {
-  float: right;
 }
 
 .blog-nav-item {
@@ -214,6 +204,7 @@ body> .container {
 
 .list-date {
   font-family: monospace;
+  margin-right: 1em;
 }
 
 .post-list-item {
@@ -228,4 +219,12 @@ body> .container {
 
 .bottombar .details {
     float: right;
+}
+
+.blog-recents {
+    padding-top: 2em;
+}
+
+.blog-latest {
+    padding-top: 2em;
 }

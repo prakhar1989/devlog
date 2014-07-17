@@ -1,37 +1,19 @@
 {{ template "theme/header.html" . }}
+<div class="container">
+<div class="row">
 {{ template "theme/navbar.html" . }}
+</div>
+ <div class="row blog-content">
+  <div class="col-sm-6 blog-main col-sm-offset-2">
+    <content>
 
-<!-- Post -->
  <div class='intro'>
-          <!--
-           Note: Titles and bylines will wrap automatically when necessary, so don't worry
-           if they get too long. You can also remove the "byline" span entirely if you don't
-           need a byline.
-          -->
   <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   <p>{{ .Params.brief }}</p>
  </div>
-  {{ if .Params.tools }}
-   <div class="tool-list">
-    <ul>
-     {{ range .Params.tools }}
-       <li class="tool-{{.}}">{{ . }}</li>
-     {{ end }}
-    </ul>
-   </div>
-
-  {{ end }}
 
  <hr class="clear-both"/>
  <div class="info">
-          <!--
-           Note: The date should be formatted exactly as it's shown below. In particular, the
-           "least significant" characters of the month should be encapsulated in a <span>
-           element to denote what gets dropped in 1200px mode (eg. the "uary" in "January").
-           Oh, and if you don't need a date for a particular page or post you can simply delete
-           the entire "date" element.
-           
-          -->
  </div>
 <article class="is-post is-post-excerpt">
  {{ if .Params.postimage }}
@@ -42,5 +24,15 @@
  {{ .Content }}
 </article>
 
-{{ template "theme/sidebar.html" }}
-{{ template "theme/footer.html" }}
+    </content>
+  </div>
+  <div class="col-sm-2 blog-sidebar">
+    {{ template "theme/sidebar.html" . }}
+  </div>
+  <div class="hidden-md hidden-lg">
+    {{ template "theme/bottom-intro.html" . }}
+  </div>
+</div>
+{{ template "theme/footer.html" . }}
+</div>
+</body>

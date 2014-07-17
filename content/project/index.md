@@ -1,7 +1,6 @@
 ---
 title: "Projects"
 brief: "Something only"
-date: "2014-09-09"
 type: project
 ---
 

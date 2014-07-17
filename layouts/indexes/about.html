@@ -1,7 +1,12 @@
 {{ template "theme/header.html" . }}
+<div class="container">
+<div class="row">
 {{ template "theme/navbar.html" . }}
- <content class="8u">
-  <div class="intro">
+</div>
+ <div class="row blog-content">
+  <div class="col-sm-6 blog-main col-sm-offset-2">
+    <content>
+<div class="intro">
    <h2>About</h2>
    <p>Well, here's an egotistical biography written from in the third person</p>
   </div>
@@ -11,7 +16,16 @@
     {{ .Render "single" }}
    {{ end }}
   </ul>
- </content>
-      
+
+    </content>
+  </div>
+  <div class="col-sm-2 blog-sidebar">
     {{ template "theme/sidebar.html" . }}
+  </div>
+  <div class="hidden-md hidden-lg">
+    {{ template "theme/bottom-intro.html" . }}
+  </div>
+</div>
 {{ template "theme/footer.html" . }}
+</div>
+</body>

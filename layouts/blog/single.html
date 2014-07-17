@@ -1,15 +1,15 @@
 {{ template "theme/header.html" . }}
+<div class="container">
+<div class="row">
 {{ template "theme/navbar.html" . }}
-
-<!-- Post -->
+</div>
+ <div class="row blog-content">
+  <div class="col-sm-6 blog-main col-sm-offset-2">
+    <content>
+        <!-- Post -->
+       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
  <div class='intro'>
-          <!--
-           Note: Titles and bylines will wrap automatically when necessary, so don't worry
-           if they get too long. You can also remove the "byline" span entirely if you don't
-           need a byline.
-          -->
-  <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-  <p>{{ .Params.brief }}</p>
+   <p>{{ .Params.brief }}</p>
  </div>
   {{ if .Params.tools }}
    <div class="tool-list">
@@ -43,5 +43,15 @@
  {{ .Content }}
 </article>
 
-{{ template "theme/sidebar.html" }}
-{{ template "theme/footer.html" }}
+    </content>
+  </div>
+  <div class="col-sm-2 blog-sidebar">
+    {{ template "theme/sidebar.html" . }}
+  </div>
+  <div class="hidden-md hidden-lg">
+    {{ template "theme/bottom-intro.html" . }}
+  </div>
+</div>
+{{ template "theme/footer.html" . }}
+</div>
+</body>

@@ -6,22 +6,25 @@
  <div class="row blog-content">
   <div class="col-sm-6 blog-main col-sm-offset-2">
    <div class="blog-header">
-    <div class="intro">
-     <h2>Hi!</h2>
-     <p>I'm Utkarsh. I use this space as a developer's log</p>
-    </div>
-   </div>
+   {{ template "theme/home-intro.html" . }}
+       </div>
 
     <content>
-      {{ range first 2 .Data.Pages }}
+    <div class="blog-latest">
+     <strong>Latest blog post</strong>
+      {{ range first 1 .Data.Pages }}
         {{ .Render "summary" }}
       {{ end }}
+    </div>
+    <div class="blog-recents">
+     <strong>Recent blog posts</strong>
       <ul>
-      {{ range first 11 .Data.Pages }}
+      {{ range first 5 .Data.Pages }}
         {{ .Render "li" }}
       {{ end }}
       </ul>
-      <h3><a href="/blog">Archive</a></h3>
+      <a href="#" class='pull-right btn btn-default'>All posts</a>
+    </div>
     </content>
   </div>
   <div class="col-sm-2 blog-sidebar">
