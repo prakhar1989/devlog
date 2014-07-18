@@ -1,10 +1,13 @@
 <!-- Post -->
- <div>
+ <div class='row blog-project'>
           <!--
            Note: Titles and bylines will wrap automatically when necessary, so don't worry
            if they get too long. You can also remove the "byline" span entirely if you don't
            need a byline.
           -->
-  <h3><a href="{{ .Permalink }}"><small>{{ .Title }}</small></a></h3>
-  <div class="10u"> {{ .Params.summary }} </div>
+  <div class="col-sm-1"><img src="{{ .Params.thumbnail }}" /> </div>
+  <div class="col-sm-offset-1 col-sm-9">
+      <strong><a href="{{ .Permalink }}"><small>{{ .Title }}</small></a></strong>
+      <div> {{ .Params.brief }} </div>
+  </div>
  </div>

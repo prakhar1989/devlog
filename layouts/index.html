@@ -20,7 +20,9 @@
      <strong>Recent blog posts</strong>
       <ul>
       {{ range first 5 .Data.Pages }}
-        {{ .Render "li" }}
+        {{ if eq .Type "post" }}
+            {{ .Render "li" }}
+        {{ end }}
       {{ end }}
       </ul>
       <a href="#" class='pull-right btn btn-default'>All posts</a>

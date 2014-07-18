@@ -217,6 +217,10 @@ body> .container {
     float: left;
 }
 
+.bottombar {
+margin: auto 0;
+}
+
 .bottombar .details {
     float: right;
 }
@@ -227,4 +231,8 @@ body> .container {
 
 .blog-latest {
     padding-top: 2em;
+}
+
+.blog-project {
+    margin-top: 2em;
 }
