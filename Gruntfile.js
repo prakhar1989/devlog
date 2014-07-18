@@ -1,6 +1,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         newpost: {
+        },
+        deploy: {
         }
     });
 
@@ -25,7 +27,7 @@ module.exports = function(grunt) {
         // Generate the file
         fs = require('fs')
         fs.writeFileSync(filePath + filename, defaultContent)
-        grunt.log.writeln('[' + this.name + '] Template post created. vim ' + filePath + filename)
+        grunt.log.writeln('Template post created. vim ' + filePath + filename)
     });
 
     grunt.registerTask('newproject', "Generates a new template project with the given filename", function(name) {
@@ -50,7 +52,28 @@ module.exports = function(grunt) {
         // Generate the file
         fs = require('fs')
         fs.writeFileSync(filePath + filename, defaultContent)
-        grunt.log.writeln('[' + this.name + '] Template project created. vim ' + filePath + filename)
+        grunt.log.writeln('Template project created. vim ' + filePath + filename)
+    });
+
+    grunt.registerTask('generate', "Removes existing static website and regenerates it", function() {
+        var sh = require('execSync')
+        code = sh.run('hugo')
+        if(code==0) {
+            grunt.log.writeln('Blog generated successfully')
+        } else {
+            grunt.log.writeln('There was an error running hugo (' + code + ')')
+        }
+    });
+
+    grunt.registerTask('deploy', "Deploys the latest set of files to my host", function() {
+        var sh = require('execSync')
+        var code = sh.run('rsync ./public/ utkarshsinha.com:/srv/utkarshsinha.com/public_html -r')
+
+        if(code==0) {
+            grunt.log.writeln('The deploy was successful')
+        } else {
+            grunt.log.writeln('There was an error running rsync (' + code + ')')
+        }
     });
 
     function generateTodayString() {
