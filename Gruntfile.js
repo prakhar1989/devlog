@@ -21,6 +21,7 @@ module.exports = function(grunt) {
         defaultContent += 'brief: "Enter a 2-3 liner here"\n'
         defaultContent += 'date: ' + generateTodayString() + '\n'
         defaultContent += 'type: post\n'
+        defaultContent += 'draft: true\n'
         defaultContent += '---\n\n'
         defaultContent += "Write your post here"
 
@@ -46,6 +47,7 @@ module.exports = function(grunt) {
         defaultContent += 'date: ' + generateTodayString() + '\n'
         defaultContent += 'type: project\n'
         defaultContent += 'thumbnail: "/images/logo-something.png"\n'
+        defaultContent += 'draft: true\n'
         defaultContent += '---\n\n'
         defaultContent += "Write about your project here"
 
