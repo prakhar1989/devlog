@@ -1,0 +1,18 @@
+{
+  "name": "devlog",
+  "version": "0.0.0",
+  "description": "Dependencies - hugo - node - npm - grunt-cli - grunt-yui-compressor",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liquidmetal/devlog.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/liquidmetal/devlog/issues"
+  }
+}
