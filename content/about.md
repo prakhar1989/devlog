@@ -12,3 +12,6 @@ I graduated from [BITS-Pilani](http://en.wikipedia.org/wiki/Birla_Institute_of_T
 In the past, I’ve worked at PDI/Dreamworks and on freelance projects on computer vision.
 
 I’ve lived at many places - Lucknow, Kanpur, Ahmedabad, Gorakhpur, Chennai and New Delhi. I currently live in Bangalore, India.
+
+### Contact
+Leave me an email on [utkarsh@utkarshsinha.com](mailto:utkarsh@utkarshsinha.com) - or leave me a [tweet](http://twitter.com/utkarshsinha)
