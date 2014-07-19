@@ -155,9 +155,8 @@ content h2 {
 .blog-nav-item {
   position: relative;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 10px;
   font-weight: 200;
-  font-size: 17px;
   color: #787878;
   text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.25);
 }
@@ -240,4 +239,8 @@ margin: auto 0;
 
 .blog-project {
     margin-top: 2em;
+}
+
+.glyphicon {
+    color: #ababab;
 }
