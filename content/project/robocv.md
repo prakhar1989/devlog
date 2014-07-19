@@ -26,33 +26,33 @@ The entire set of lecture slides has been uploaded for free use by everyone. You
 A whopping 520 slides - [available here](http://www.slideshare.net/liquidmetal1/the-robocv-workshop). A 7 day workshop probably deserves so many slides!
 http://www.slideshare.net/liquidmetal1/the-robocv-workshop
 
-Index:
-Slide 001 - Introduction
-Slide 004 - What is a robot?
-Slide 009 - Locomotion systems
-Slide 046 - What is image processing?
-Slide 049 - Applications of image processing
-Slide 052 - Components of an image processing system
-Slide 058 - Digital image represenation
-Slide 067 - Getting started with Matlab
-Slide 084 - Types of images
-Slide 095 - Introduction to color spaces
-Slide 119 - Robocup video
-Slide 120 - Getting started with OpenCV
-Slide 123 - Getting OpenCV working
-Slide 150 - end of day 1
-Slide 151 - Color spaces in OpenCV
-Slide 156 - The IP Bot Circuit
-Slide 192 - Interfacing with the PC
-Slide 200 - Image aquisition theory
-Slide 207 - Image preprocessing
-Slide 226 - Preprocessing in Matlab
-Slide 237 - Preprocessing in OpenCV
-Slide 282 - End of day 2
-Slide 283 - Morphological image processing
-Slide 301 - Morphology in Matlab
-Slide 309 - Morphology in OpenCV
-Slide 312 - Thresholding
-Slide 317 - Matlab M Files
-Slide 338 - HSV Thresholding
-Slide 
+**Index:**
+
+* Slide 001 - Introduction
+* Slide 004 - What is a robot?
+* Slide 009 - Locomotion systems
+* Slide 046 - What is image processing?
+* Slide 049 - Applications of image processing
+* Slide 052 - Components of an image processing system
+* Slide 058 - Digital image represenation
+* Slide 067 - Getting started with Matlab
+* Slide 084 - Types of images
+* Slide 095 - Introduction to color spaces
+* Slide 119 - Robocup video
+* Slide 120 - Getting started with OpenCV
+* Slide 123 - Getting OpenCV working
+* Slide 150 - end of day 1
+* Slide 151 - Color spaces in OpenCV
+* Slide 156 - The IP Bot Circuit
+* Slide 192 - Interfacing with the PC
+* Slide 200 - Image aquisition theory
+* Slide 207 - Image preprocessing
+* Slide 226 - Preprocessing in Matlab
+* Slide 237 - Preprocessing in OpenCV
+* Slide 282 - End of day 2
+* Slide 283 - Morphological image processing
+* Slide 301 - Morphology in Matlab
+* Slide 309 - Morphology in OpenCV
+* Slide 312 - Thresholding
+* Slide 317 - Matlab M Files
+* Slide 338 - HSV Thresholding
