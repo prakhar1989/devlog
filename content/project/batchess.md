@@ -1,7 +1,7 @@
 ---
 title: "Batchess"
 date: 2008-06-12
-brief: "A remake of the epic chess game, Batchess from the olden days"
+brief: "A remake of the epic chess game, Batchess from the olden days. Complete with animated pieces and cinematic camera movements"
 type: project
 thumbnail: "/images/logo-chess.jpg"
 ---
