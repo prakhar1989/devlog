@@ -83,7 +83,7 @@ module.exports = function(grunt) {
         today = new Date()
         year = today.getFullYear()
         month = today.getMonth()
-        day = today.getDay()
+        day = today.getDate()
 
         strDate  = year + '-'
         if(month<10) strDate += '0'
