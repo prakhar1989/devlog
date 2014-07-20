@@ -1,6 +1,6 @@
 ---
 title: "Angelhack Bangalore"
-date: "2013-07-22"
+date: "2013-06-22"
 summary: "I live in Bangalore, so why not take part in a hackathon, I thought. And Angelhack organized a really good hackathon!"
 brief: "You have 24 hours to create a prototype - go!"
 tools:
