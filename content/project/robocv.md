@@ -24,7 +24,7 @@ The best part was that this event was held two weeks before our annual innovatio
 The entire set of lecture slides has been uploaded for free use by everyone. You can download it, use it redistribute it, and do whatever you want. Just don’t modify it. Especially the credits part :)
 
 A whopping 520 slides - [available here](http://www.slideshare.net/liquidmetal1/the-robocv-workshop). A 7 day workshop probably deserves so many slides!
-http://www.slideshare.net/liquidmetal1/the-robocv-workshop
+https://speakerdeck.com/liquidmetal/robocv-workshop
 
 **Index:**
 
