@@ -30,4 +30,4 @@ This was by far the most sophisticated arena we encountered. The idea was to hav
 We had the same team again - together for one last gig, before we retired to do bigger and better things!
 
 ![The team](/images/ipbot_team.gif)
-**The team**: Sanjay, Jenish, Me, Prakahar
+**The team**: Sanjay, Jenish, Me, [Prakhar](http://prakhar.me)
