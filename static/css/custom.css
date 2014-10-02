@@ -43,6 +43,10 @@ li.tool-cpp {
   background: url(/images/ico-cpp.png);
 }
 
+li.tool-python {
+  background: url(/images/ico-python.png);
+}
+
 li.author-social-linkedin {
   background: url(/images/ico-linkedin.png) no-repeat 0px;
   padding-left: 20px;
