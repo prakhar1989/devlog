@@ -1,11 +1,11 @@
 ---
 title: "About me"
 type: about
-brief: "An egotistical third person essay on me"
+brief: "Oh well"
 ---
 I’m Utkarsh Sinha. I’m a programmer, computer vision researcher, runner, game developer, movie maker and music lover.
 
-I am 24 and specialize in computer vision - specifically with OpenCV and C/C++. I’m always looking for the latest happenings in this field.
+I am 24 and specialize in computer vision - specifically with OpenCV and C/C++. I’m always looking for the latest happenings
 
 I graduated from [BITS-Pilani](http://en.wikipedia.org/wiki/Birla_Institute_of_Technology_and_Science,_Pilani_%E2%80%93_Goa_Campus) with a BE in Computer Science and am currently working with Dreamworks Animation/Technicolor as a technical director in Bangalore, India.
 
