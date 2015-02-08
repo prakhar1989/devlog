@@ -1,0 +1,24 @@
+{{ template "theme/header.html" . }}
+<div class="container">
+<div class="row">
+{{ template "theme/navbar.html" . }}
+</div>
+ <div class="row blog-content">
+  <div class="col-sm-6 blog-main col-sm-offset-2">
+    <content>
+      <h2>Live weather</h2>
+      <p>I've setup a raspberry pi based weather monitor at my house. These are live values!</p>
+      {{ .Content }}
+    </content>
+  </div>
+  <div class="col-sm-2 blog-sidebar">
+    {{ template "theme/sidebar.html" . }}
+  </div>
+  <div class="clearfix"> </div>
+  <div class="hidden-md hidden-lg">
+    {{ template "theme/bottom-intro.html" . }}
+  </div>
+</div>
+{{ template "theme/footer.html" . }}
+</div>
+</body>
