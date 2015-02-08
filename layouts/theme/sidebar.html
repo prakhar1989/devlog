@@ -8,4 +8,25 @@
     <li class="author-social-github"><a href="http://github.com/liquidmetal" target="_blank">github</a></li>
     <li class="author-social-twitter"><a href="http://twitter.com/utkarshsinha" target="_blank">twitter</a></li>
    </ul>
+   <span id="weather" style='display: none;'><span id='temperature'></span>&deg;C, <span id='humidity'></span>% humidity</span>
+   <script type="text/javascript">
+     var xmlhttp;
+     if (window.XMLHttpRequest) {
+       // code for IE7+, Firefox, Chrome, Opera, Safari
+       xmlhttp=new XMLHttpRequest();
+     } else {
+       // code for IE6, IE5
+       xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+     }
+     xmlhttp.onreadystatechange = function() {
+       if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+         obj = JSON.parse(xmlhttp.responseText)
+         document.getElementById('temperature').innerHTML = Number(obj.int_temp).toFixed(1);
+         document.getElementById('humidity').innerHTML = Number(obj.int_hum).toFixed(1);
+         document.getElementById('weather').style.display = 'block';
+       }
+     }
+     xmlhttp.open('GET', '/api/v1/get_weather_now', true);
+     xmlhttp.send();
+   </script>
   </section>
