@@ -47,6 +47,10 @@ li.tool-python {
   background: url(/images/ico-python.png);
 }
 
+li.tool-rust {
+  background: url(/images/ico-rust.png);
+}
+
 li.author-social-linkedin {
   background: url(/images/ico-linkedin.png) no-repeat 0px;
   padding-left: 20px;
