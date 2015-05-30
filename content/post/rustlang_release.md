@@ -2,7 +2,7 @@
 title: "Rustlang 1.0 Bangalore"
 brief: "Yay"
 summary: "Finally, a stable version of Rust and folks in Bangalore decide to meetup"
-date: 2015-04-25
+date: 2015-05-25
 type: post
 tools:
   - rust
