@@ -1,5 +1,5 @@
 ---
-title: "Gophercon Idia"
+title: "Gophercon India"
 brief: "India's first conference on Golang was held in Bangalore in 2015."
 summary: "India's first ever conferece on Golang"
 date: 2015-02-24
