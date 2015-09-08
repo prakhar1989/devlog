@@ -74,6 +74,12 @@ li.author-social-twitter {
   list-style: none;
 }
 
+li.author-social-imdb {
+  background: url(/images/ico-linkedin.png) no-repeat 0px;
+  padding-left: 20px;
+  list-style: none;
+}
+
 .site-title {
   font-size: 24px;
   color: #787878;
