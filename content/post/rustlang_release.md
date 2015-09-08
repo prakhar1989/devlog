@@ -1,6 +1,6 @@
 ---
 title: "Rustlang 1.0 Bangalore"
-brief: "Yay"
+brief: "Rust v1.0 release - hopefully we'll get an http server soon"
 summary: "Finally, a stable version of Rust and folks in Bangalore decide to meetup"
 date: 2015-05-25
 type: post
