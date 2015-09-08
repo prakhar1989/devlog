@@ -11,18 +11,17 @@
  <div class='intro'>
    <p>{{ .Params.brief }}</p>
  </div>
+ <div class="tool-list">
+  <span class="date"><span class="month">{{ .Date.Month }}</span> <span class="day">{{ .Date.Day }}</span><span class="year">, {{ .Date.Year }}</span></span>
   {{ if .Params.tools }}
-   <div class="tool-list">
     <ul>
      {{ range .Params.tools }}
        <li class="tool-{{.}}">{{ . }}</li>
      {{ end }}
     </ul>
-   </div>
-
   {{ end }}
+ </div>
 
- <span class="date"><span class="month">{{ .Date.Month }}</span> <span class="day">{{ .Date.Day }}</span><span class="year">, {{ .Date.Year }}</span></span>
  <hr class="clear-both"/>
  <div class="info">
           <!--

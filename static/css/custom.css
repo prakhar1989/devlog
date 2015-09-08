@@ -10,6 +10,11 @@ div.tool-list {
     float: right;
 }
 
+div.tool-list ul {
+    padding-left: 0;
+    display: inline-block;
+}
+
 div.tool-list li {
     display: inline-block;
     margin-left: 1em;
@@ -137,6 +142,12 @@ content h2 {
     float: right;
     clear: right;
     color: #999;
+}
+
+.tool-list .date {
+    padding-left: 0;
+    float: none;
+    clear: none;
 }
 
 .blog-sidebar h2 {
