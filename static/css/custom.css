@@ -127,9 +127,11 @@ content > ul {
   padding-left: 20px;
 }
 
-content h2 {
-   font-size: 2em;
+content article h3 {
+   font-size: 1.5em;
    display: block;
+   border-bottom: solid 1px #787878;
+   color: #787878;
 }
 
 .is-post {

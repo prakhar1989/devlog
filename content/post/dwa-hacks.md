@@ -16,7 +16,7 @@ The technologies involved are very diverse - [OpenVDB](http://www.openvdb.org/) 
 
 While devising the hackathon, we implemented the problem statement ourselves just to get a sense of the pain points. Here's what our architecture for the problem statement looked like.
 
-## Our approach
+### Our approach
 
 The simulation solver was written in C++. This was to ensure we do not run into performance issues because of lot of fish. The solver needs to find a path and also keep the fish constrained under the rules of flocking.
 
@@ -34,7 +34,7 @@ Interestingly, we found that the C++ process was able to generate ~5000 packets 
 
 We went a step further and let the user upload a VDB file from the browser. This required additionally transmitting an image of the VDB (which we rendered on the fly).
 
-## Results
+### Results
 
 The teams completed the problem statement to varying levels of completeness after the designated 24 hours. We were able to shortlist five teams who were neck-and-neck with each other (we had asked them to submit gifs of their results).
 
@@ -42,7 +42,7 @@ One after the other these teams presented their results and approach to solving 
 
 [![The hackathon winners!](/images/hackathon-winners.png)](/images/hackathon-winners-big.png)
 
-## Aftermath
+### Aftermath
 The two days leading up to the hackathon and the two days of the hackathon - were intense and fun! The day afterwards felt a bit uneasy with thoughts like "I don't have anything to do" and "What do I do?".
 
 It would not have been possible to pull off something of this scale without the awesome team that we had! 

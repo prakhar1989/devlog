@@ -8,10 +8,10 @@ draft: true
 
 Here's a quick and dirty guide to setting up NDK builds with AndroidStudio. We'll use Gradle to tweak the IDE to help develop NDK applications.
 
-## Setting up Gradle
+### Setting up Gradle
 You need to identify
 
-## Generating headers
+### Generating headers
 Something
 
 Oh, and Merry christmas!
