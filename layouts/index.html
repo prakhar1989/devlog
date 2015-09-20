@@ -12,14 +12,22 @@
     <content>
     <div class="blog-latest">
      <strong>Latest blog post</strong>
-      {{ range first 1 .Data.Pages }}
+      {{ range first 1 (where .Data.Pages "Type" "post")}}
         {{ .Render "summary" }}
       {{ end }}
+      <a href='/post' class='pull-right btn btn-default'>All posts</a>
+    </div>
+    <div class="blog-latest">
+     <strong>Newest Project</strong>
+      {{ range first 1 (where .Data.Pages "Type" "project")}}
+        {{ .Render "summary" }}
+      {{ end }}
+      <a href='/project' class='pull-right btn btn-default'>All projects</a>
     </div>
     <div class="blog-recents">
      <strong>Recent blog posts</strong>
       <ul>
-      {{ range first 10 .Data.Pages }}
+      {{ range first 10 (where .Data.Pages "Type" "post") }}
         {{ if eq .Type "post" }}
             {{ .Render "li" }}
         {{ end }}
