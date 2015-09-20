@@ -6,6 +6,6 @@ publishdir: "public"
 indexes:
   category: "categories"
   tag: "tags"
-baseurl: "http://www.utkarshsinha.com"
+baseurl: "/"
 canonifyurls: true
 ---
