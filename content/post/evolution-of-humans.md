@@ -25,7 +25,7 @@ Excavations suggest that [Neanderthals had better tools](http://edition.cnn.com/
 
 Based on these four species - it is safe to say that H. Sapiens might evolve into a new species in the future. When they do - we will have two homonids walking the earth again. Is this assumption correct?
 
-## Evolution in the future
+### Evolution in the future
 We've seen a consistent pattern in evolution. 200 million years, 200,000 years, 50,000 years. This means we're due for another species in the next 50,000 years or so. To put that in perspective, we've got written record of history for only the past 5,000 years. We've been changing our environment rapidly over the past few centuries - and this is exactly what stimulates evolution.
 
 More complex cultures, improved lifespans and drastically new ways of living already marked the birth of a new species - but these have been biological changes. We're already doing these with technology without altering our genetics. This means we're not technically a new species just yet. Let me go over a few different ideas that might happen in the future.
