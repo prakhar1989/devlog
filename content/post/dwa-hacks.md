@@ -1,5 +1,5 @@
 ---
-title: "The DreamWorks Animation Hackathon"
+title: "Organizing the DreamWorks Animation Hackathon"
 brief: "We asked them to implement quite a bit - simluation, path finding, webgl and sockets!"
 summary: "We conducted a hackathon at IIIT Bangalore. Simulate a flock of fish and render the results on screen (or in a browser!)"
 date: 2015-07-30
