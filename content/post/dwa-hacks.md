@@ -34,6 +34,8 @@ Interestingly, we found that the C++ process was able to generate ~5000 packets 
 
 We went a step further and let the user upload a VDB file from the browser. This required additionally transmitting an image of the VDB (which we rendered on the fly).
 
+![Sample results from our solves](/images/dwa-hacks-viewer.gif)
+
 ### Results
 
 The teams completed the problem statement to varying levels of completeness after the designated 24 hours. We were able to shortlist five teams who were neck-and-neck with each other (we had asked them to submit gifs of their results).
