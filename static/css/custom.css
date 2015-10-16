@@ -126,9 +126,15 @@ nav ul > li > a {
   text-align: center;
 }
 
+content .project .intro {
+  float: left;
+  width:80%;
+}
+
 content .intro {
   float: left;
 }
+
 
 content > ul {
   padding-left: 20px;
@@ -287,4 +293,9 @@ margin: auto 0;
 
 content ul {
     padding-left: 1em;
+}
+
+.project-thumbnail {
+    float: right;
+    margin-right: 1em;
 }

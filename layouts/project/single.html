@@ -7,10 +7,13 @@
   <div class="col-sm-6 blog-main col-sm-offset-2">
     <content>
         <!-- Post -->
-       <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
- <div class='intro'>
-   <p>{{ .Params.brief }}</p>
- </div>
+        <div class='project header'>
+            <img src='{{.Params.thumbnail }}' class='project-thumbnail' />
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class='intro'>
+               <p>{{ .Params.brief }}</p>
+            </div>
+        </div>
   {{ if .Params.tools }}
    <div class="tool-list">
     <ul>
