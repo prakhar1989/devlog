@@ -68,6 +68,9 @@ func requestHandler(resource Resource) http.HandlerFunc {
             return
         }
 
+        rw.Header().Set("Access-Control-Allow-Origin", "*")
+        rw.Header().Set("Access-Control-Allow-Methods", "GET")
+        rw.Header().Set("Access-Control-Allow-Header", "Content-Type")
         rw.WriteHeader(code)
         rw.Write(content)
     }
