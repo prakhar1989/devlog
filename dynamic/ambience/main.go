@@ -85,6 +85,12 @@ type Ambience struct {
     ResourceBase
 }
 
+type Latest struct {
+    // Default implementation of all Resource methods
+    ResourceBase
+}
+
+
 // Override the Get method
 func (t Ambience) Put(values url.Values) (int, interface{}) {
     r_light:= values["l"]
@@ -140,9 +146,30 @@ func (t Ambience) Get(values url.Values) (int, interface{}) {
     return http.StatusOK, s
 }
 
+func (t Latest) Get(values url.Values) (int, interface{}) {
+    client := &http.Client{}
+    url := "http://localhost:8086/query?db=ambience&q=SELECT%20last(value)%20from%20r_light,r_temp,r_hum"
+    req, err := http.NewRequest("GET", url, bytes.NewBuffer([]byte{}))
+    resp, err := client.Do(req)
+    if err != nil {
+        fmt.Println("There was an error in fetching data")
+    }
+    b, err := ioutil.ReadAll(resp.Body)
+    if err != nil {
+        fmt.Println("There was an error fetching data")
+    }
+
+    defer resp.Body.Close()
+    s := string(b)
+    return http.StatusOK, s
+
+}
+
 func main() {
     var ambience Ambience
+    var latest Latest
     AddResource(ambience, "/ambience")
+    AddResource(latest, "/latest")
     fmt.Println("Starting server on 8085")
     http.ListenAndServe(":8085", nil)
 }
