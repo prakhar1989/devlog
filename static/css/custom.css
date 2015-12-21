@@ -198,7 +198,7 @@ content article h3 {
   padding: 10px 10px;
   font-weight: 200;
   color: #787878;
-  text-shadow: 1px 1px 2px rgba(128, 128, 128, 0.25);
+  text-shadow: none;
 }
 .blog-masthead span {
   margin-right: 6px;
