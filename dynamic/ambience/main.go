@@ -130,8 +130,15 @@ func (t Ambience) Put(values url.Values) (int, interface{}) {
 
 func (t Ambience) Get(values url.Values) (int, interface{}) {
     client := &http.Client{}
-    url := "http://localhost:8086/query?db=ambience&q=SELECT%20value%20from%20r_light,r_temp,r_hum"
-    req, err := http.NewRequest("GET", url, bytes.NewBuffer([]byte{}))
+    var Url *url.URL
+    Url, err := url.Parse("http://localhost:8086")
+    Url.Path += "/query"
+    params := url.Values{}
+    params.Add("db", "ambience")
+    params.Add("q", "SELECT mean(value) from r_light, r_temp, r_hum where time > now() - 7d group by time(15m)")
+    Url.RawQuery += params.Encode()
+
+    req, err := http.NewRequest("GET", Url.String(), bytes.NewBuffer([]byte{}))
     resp, err := client.Do(req)
     if err != nil {
         fmt.Println("There was an error in fetching data")
@@ -162,14 +169,13 @@ func (t Latest) Get(values url.Values) (int, interface{}) {
     defer resp.Body.Close()
     s := string(b)
     return http.StatusOK, s
-
 }
 
 func main() {
     var ambience Ambience
     var latest Latest
     AddResource(ambience, "/ambience")
-    AddResource(latest, "/latest")
+    AddResource(latest, "/get_weather_now")
     fmt.Println("Starting server on 8085")
     http.ListenAndServe(":8085", nil)
 }
