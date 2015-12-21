@@ -46,17 +46,15 @@
             }
 
              document.getElementById('temperature').innerHTML = '<img src="/images/ico-temp.png" />' +Number(temp).toFixed(1);
+             document.getElementById('temperature-bottom').innerHTML = '<img src="/images/ico-temp.png" />' +Number(temp).toFixed(1);
              document.getElementById('humidity').innerHTML = '<img src="/images/ico-humidity.png" />' + Number(hum).toFixed(1);
+             document.getElementById('humidity-bottom').innerHTML = '<img src="/images/ico-humidity.png" />' + Number(hum).toFixed(1);
              document.getElementById('weather').style.display = 'block';
+             document.getElementById('weather-bottom').style.display = 'block';
            }
          }
          xmlhttp.open('GET', '/get_weather_now', true);
          xmlhttp.send();
-    }
-    document.onreadystatechange = function() {
-        if(document.readyState == 'complete') {
-            fetch_latest_weather();
-        }
     }
    </script>
   </section>
