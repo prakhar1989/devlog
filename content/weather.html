@@ -2,32 +2,145 @@
 type: weather
 ---
 <script src="http://mbostock.github.com/d3/d3.v2.js"></script>
-<div id="graph1" class="aGraph" style="width:300px; height:30px;"></div>
+<div id='d3-loading'><img src="/images/loading.gif" /></div>
+<h3 id='heading-temp'>Temperature</h3>
+<div id="d3-temperature" class="aGraph" style="width:300px; height:100px;"></div>
+<h3 id='heading-hum'>Humidity</h3>
+<div id="d3-humidity" class="aGraph" style="width:300px; height:100px;"></div>
+<h3 id='heading-light'>Luminosity</h3>
+<div id="d3-light" class="aGraph" style="width:300px; height:100px;"></div>
+<script src="/js/jquery.min.js"></script>
 <script>
+    humidity = [];
+    temperature = [];
+    light = [];
+
+    function generate_graphs(data) {
+        parsed = JSON.parse(data);
+        series = parsed.results[0].series;
+
+        for(i=0;i<3;i++) {
+            data = series[i].values
+            series_name = series[i].name
+
+            if(series_name=="r_hum")
+                humidity = data;
+            else if(series_name=="r_light")
+                light = data;
+            else if(series_name=="r_temp")
+                temperature = data;
+        }
+
+        displayGraph(temperature, "#d3-temperature", 512, 100, [30, 0], false);
+        displayGraph(humidity, "#d3-humidity", 512, 100, [100, 0], false);
+        displayGraph(light, "#d3-light", 512, 100, [0, 30000], true);
+        $('#d3-loading').hide();
+        $('#heading-temp').show()
+        $('#heading-hum').show()
+        $('#heading-light').show()
+    }
+
+    function do_query() {
+        $.ajax({ url: "/ambience",
+                 crossDomain: true, 
+                 success: function(data) {
+                    generate_graphs(data)
+                    poll();
+                },
+                dataType: "json"});
+    }
+
+    function poll(){
+        setTimeout(function(){
+            do_query();
+        }, 60000);      // Every minute
+    }
     
-  function displayGraph(id, width, height, interpolation) {
-    // create an SVG element inside the #graph div that fills 100% of the div
-    var graph = d3.select(id).append("svg:svg").attr("width", "100%").attr("height", "100%");
+    function displayGraph(data, id, width, height, yscale, brightness) {
+        var bottom_margin = 40;
+        var left_margin = 40;
+        var top_margin = 20;
+        var num_days_into_past = 7;
 
-    // create a simple data array that we'll plot with a line (this array represents only the Y values, X will just be the index location)
-    var data = [3, 6, 2, 7, 5, 2, 1, 3, 8, 9, 2, 5, 9, 3, 6, 3, 6, 2, 7, 5, 2, 1, 3, 8, 9, 2, 5, 9, 2, 7, 5, 2, 1, 3, 8, 9, 2, 5, 9, 3, 6, 2, 7, 5, 2, 1, 3, 8, 9, 2, 9];
+        var graph = d3.select(id)
+        if(graph.select('svg').empty())
+            graph = graph.append("svg:svg").attr("width", "512px").attr("height", "100px");
+        else
+            graph = graph.select('svg')
 
-    // X scale will fit values from 0-10 within pixels 0-100
-    var x = d3.scale.linear().domain([0, 48]).range([-5, width]); // starting point is -5 so the first value doesn't show and slides off the edge as part of the transition
-    // Y scale will fit values from 0-10 within pixels 0-100
-    var y = d3.scale.linear().domain([0, 10]).range([0, height]);
+        group = graph.select('g')
+        if(group.empty())
+            group = graph.append('g')
 
-    // create a line object that represents the SVN line we're creating
-    var line = d3.svg.line()
-                     .x(function(d,i) { return x(i); })
-                     .y(function(d) { return y(d); })
-                     .interpolate(interpolation)
+        // X scale will fit values from 0-10 within pixels 0-100
+        var now = (new Date()).getTime();
+        var past_seven = now - num_days_into_past*24*60*60*1000;
+
+        var x = d3.time.scale()
+                       .domain([past_seven, now])
+                       .range([left_margin, width]);
+
+        var y = d3.scale.linear()
+                        .domain(yscale)
+                        .range([top_margin, height-bottom_margin]);
+
+        // create a line object that represents the SVN line we're creating
+        var line = d3.svg.line()
+                         .x(function(d,i) { return x(Date.parse(d[0])); })
+                         .y(function(d) { return y(d[1]); }) 
+
+        var xAxis = d3.svg.axis()
+                          .scale(x)
+                          .orient('bottom')
+                          .tickSize(5)
+                          .ticks(10)
+
+        var yAxis = d3.svg.axis()
+                          .scale(y)
+                          .orient('left')
+                          .tickValues([yscale[0], yscale[1], 0]);
+
+        if(brightness) {
+            yAxis.tickFormat(function(d) {
+                if(d<100)
+                    return "lit"
+                else
+                    return "dark"
+            });
+        }
    
-    // display the line by appending an svg:path element with the data line we created above
-    graph.append("svg:path").attr("d", line(data));
-    // or it can be done like this
-    //graph.selectAll("path").data([data]).enter().append("svg:path").attr("d", line);
-  }
-        
-  displayGraph("#graph1", 512, 100, "basis");
+        var line_element = group.select('path')
+        if(line_element.empty()) {
+            line_element = group.append('path')
+                                .attr('transform', 'translate(0, ' + top_margin + ')')
+        }
+
+        line_element.datum(data).attr('d', line);
+
+        x_axis = group.select('g.x_axis')
+        x_axis_position = y(0)
+        if(brightness)
+            x_axis_position = y( yscale[1] )
+
+        if(x_axis.empty()) {
+            group.append('g')
+                 .attr('class', 'x_axis')
+                 .attr('transform', 'translate(0, ' + (top_margin+x_axis_position) + ')')
+                 .call(xAxis);
+        }
+
+        y_axis = group.select('g.y_axis')
+        if(y_axis.empty()) {
+            group.append('g')
+                 .attr('class', 'y_axis')
+                 .attr('transform', 'translate(' + left_margin +', '+top_margin+')')
+                 .call(yAxis);
+        }
+    }
+    // Initiate the polling
+    $('#heading-temp').hide()
+    $('#heading-hum').hide()
+    $('#heading-light').hide()
+    $('#latest-time').hide()
+    do_query();
 </script>

@@ -299,3 +299,22 @@ content ul {
     float: right;
     margin-right: 1em;
 }
+
+#d3-loading {
+    text-align: center;
+}
+
+
+/* SVG specific styles */
+svg path {
+    fill: none;
+    stroke: black;
+}
+
+svg .y_axis {
+    font-size: 10px;
+}
+
+svg .x_axis {
+    font-size: 9px;
+}
