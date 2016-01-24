@@ -6,7 +6,7 @@ date: 2016-01-06
 type: post
 ---
 
-Another year whizzes by. We are at this unique juncture where the big 4 in technology have [started](https://aws.amazon.com/machine-learning/) [focussing](https://www.projectoxford.ai/) on [artificial](http://venturebeat.com/2015/05/26/facebooks-oculus-buys-computer-vision-startup-to-help-the-rift-understand-the-world/) [intelligence](https://cloud.google.com/vision/). For me, this was the year of switching gears from software development to specializing in computer vision.
+Another year whizzes by. We are at this unique juncture where the big five in technology have [started](https://aws.amazon.com/machine-learning/) [focussing](https://www.projectoxford.ai/) [on](http://www.forbes.com/sites/theopriestley/2015/10/03/why-apples-artificial-intelligence-acquisition-is-much-bigger-than-siri/#2715e4857a0b3ce2fcd239d2) [artificial](http://venturebeat.com/2015/05/26/facebooks-oculus-buys-computer-vision-startup-to-help-the-rift-understand-the-world/) [intelligence](https://cloud.google.com/vision/). For me, this was the year of switching gears from software development to specializing in computer vision.
 
 ### Switching gears
 
