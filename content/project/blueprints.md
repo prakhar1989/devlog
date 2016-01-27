@@ -6,7 +6,7 @@ type: project
 thumbnail: "/images/logo-opencv-blueprints.png"
 ---
 
-[![OpenCV Blueprints](/images/opencv-blueprints-cover.png)](https://www.packtpub.com/application-development/opencv-blueprints)
+[![OpenCV Blueprints](/images/opencv-blueprints-cover.png)](http://aishack.in/opencv-blueprints/)
 
 OpenCV Blueprints that walks the reader through multiple projects and teaches them how to think about computer vision projects. The book does expects that you know how OpenCV works and how some basic algorithms and techniques can be utilized. It builds on top of these to show how real-life applications utilize these algorithms.
 
