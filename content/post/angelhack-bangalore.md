@@ -1,5 +1,5 @@
 ---
-title: "Angelhack Bangalore"
+title: "Kinomotion / Angelhack Bangalore"
 date: "2013-06-22"
 summary: "I live in Bangalore, so why not take part in a hackathon, I thought. And Angelhack organized a really good hackathon!"
 brief: "You have 24 hours to create a prototype - go!"
@@ -59,3 +59,5 @@ I had never thought *I* would be the one who gets to go!
 *Github:* https://github.com/liquidmetal/kinomotion
 
 *Event pics*: https://www.flickr.com/photos/angelhack/sets/72157634266765859
+
+*Presentation*: https://bit.ly/kinomotion-blr
