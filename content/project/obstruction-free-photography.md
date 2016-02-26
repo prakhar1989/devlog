@@ -6,7 +6,7 @@ type: project
 thumbnail: "/images/logo-ofp.png"
 ---
 
-SIGGRAPH 2015 had a paper on [obstruction free photography](https://sites.google.com/site/obstructionfreephotography/). The key idea was that there are several real-life situations where your subject is obstructed (by a fence, a window pane, etc).
+SIGGRAPH 2015 had a paper on [obstruction free photography](https://sites.google.com/site/obstructionfreephotography/). The problem statement was that there are several real-life situations where your subject is obstructed (by a fence, a window pane, etc).
 
 The key ideas were take a short video (about 5 seconds) with slight changes in the camera position. Thus, your camera captures pixels behind the obstruction. Then, calculate the relative positions of the frames. Using these relative positions, the image is split into a foreground and background layer (the foreground moves a lot more compared to the background). Finally, run it through an optimization function. This function rewards smooth changes and penalizes harsh ones. Essentially, it "picks the right colour for each pixel". The implementation details were a bit tricky.
 
@@ -33,5 +33,5 @@ I've noticed that the input image sequence often needs hand-holding when figurin
 
 ![Image misalignment](/images/ofp-image-misalign.png)
 
-## Fin
+## Conclusion
 I feel my code would use a lot more fine tuning to get it working just right. I have not done justice to the amount of effort that went into this paper's implementation by the authors. I've found several things that can go wrong when working with a real-life dataset (we captured the videos ourselves!). I've found some potential techniques that can be used to fix those issues. Overall, this was a good project to work on!
