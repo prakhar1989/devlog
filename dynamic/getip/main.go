@@ -194,7 +194,7 @@ func (t GetIp) Get(values url.Values) (int, interface{}) {
     }
 
     // Try opening the latest file for this machine
-    return http.StatusOK, ipaddr
+    return http.StatusOK, string(ipaddr[:])
 }
 
 func main() {
