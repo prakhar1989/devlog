@@ -1,6 +1,7 @@
 {
   "name": "devlog",
   "version": "0.0.0",
+  "private": true,
   "description": "Dependencies - hugo - node - npm - grunt-cli - grunt-yui-compressor",
   "main": "Gruntfile.js",
   "scripts": {
