@@ -21,8 +21,11 @@ COPY config.yaml Gruntfile.js nginx.conf package.json /work/
 COPY ./content /work/content/
 COPY ./layouts /work/layouts/
 COPY ./static /work/static/
-ADD dynamic/ambience/ambience /dynamic/ambience
-ADD dynamic/getip/getip /dynamic/getip
+COPY ./dynamic /work/dynamic/
+RUN cd /work/dynamic/ambience && gccgo -g main.go -o /dynamic/ambience
+RUN cd /work/dynamic/getip && gccgo -g main.go -o /dynamic/getip
+#ADD dynamic/ambience/ambience /dynamic/ambience
+#ADD dynamic/getip/getip /dynamic/getip
 RUN cd /work/ && npm install grunt execSync && ./node_modules/grunt/bin/grunt generate
 
 # Setup supervisord
