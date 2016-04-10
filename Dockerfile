@@ -34,7 +34,7 @@ COPY supervisord.conf /etc/supervisor/supervisord.conf
 # Application specific dependencies
 ADD nginx.conf /etc/nginx/nginx.conf
 
-CMD service supervisor start
+CMD supervisord -n
 
 # Weather port
 EXPOSE 8084
