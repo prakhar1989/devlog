@@ -318,3 +318,12 @@ svg .y_axis {
 svg .x_axis {
     font-size: 9px;
 }
+
+#affiliation ul {
+    list-style-type: none;
+    margin-left: -1em;
+}
+
+#affiliation ul li {
+    margin-bottom: 1em;
+}
