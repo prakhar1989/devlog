@@ -5,7 +5,7 @@ brief: "Shall I use third person here?"
 ---
 I’m Utkarsh Sinha. I’m a programmer, computer vision researcher, runner, game developer, movie maker and music lover.
 
-I am 25 and specialize in computer vision - specifically with OpenCV and C/C++. I’m always looking for the latest happenings in the field.
+I am 26 and specialize in computer vision - specifically with OpenCV and C/C++. I’m always looking for the latest happenings in the field.
 
 I'm currently enrolled at the Pittsburgh campus of Carnegie Mellon University as a student of [Computer Vision](http://www.ri.cmu.edu/MSCV).
 
