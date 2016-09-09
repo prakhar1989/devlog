@@ -4,6 +4,7 @@ brief: "A quick overview"
 summary: "The MSCV program at CMU premiered in 2015 and seems to be a pretty good program. A quick overview of the program why it exists and what to expect if you join it."
 date: 2016-09-06
 type: blog
+draft: true
 ---
 
 I joined Carnegie Mellon's MSCV program last year and it has been a blast.
