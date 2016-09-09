@@ -3,7 +3,7 @@ title: "Kinomotion"
 brief: "I built an app to make cinemagraphs on the go (with Android). This was my hack at Angelhack Spring 2013 which won me a place into their 'hackcelarator'"
 type: project
 date: 2013-06-22
-thumbnail: "/images/logo-kinomotion.png"
+thumbnail: "/img/logo-kinomotion.png"
 ---
 
 Kinomotion is an android app that lets you create cinemagraphs. Take a video, select regions to block motion and export as gif!

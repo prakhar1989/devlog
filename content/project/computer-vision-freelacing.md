@@ -3,7 +3,7 @@ title: "Freelancing in Computer Vision"
 brief: "I worked on a bunch of projects over the course of years that involve Android, iOS and OpenCV. They range from useful apps to entertainment to cracking captcha"
 date: 2011-12-13
 type: project
-thumbnail: "/images/logo-cv-freelance.png"
+thumbnail: "/img/logo-cv-freelance.png"
 ---
 
 ### Picsured (now JoyFlips) (Apr 2012 - Sept 2012)

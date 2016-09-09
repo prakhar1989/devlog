@@ -9,7 +9,7 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 ENV PATH=/usr/bin/:$PATH
 
 # Install hugo
-RUN cd /tmp/ && wget https://github.com/spf13/hugo/releases/download/v0.13/hugo_0.13_linux_amd64.tar.gz && tar -xzf /tmp/*.tar.gz && cd /usr/bin/ && ln -s /tmp/hugo_0.13_linux_amd64/hugo_0.13_linux_amd64 hugo
+RUN cd /tmp/ && wget https://github.com/spf13/hugo/releases/download/v0.16/hugo_0.16_linux-64bit.tgz && tar -xzf /tmp/*.tgz && cp /tmp/hugo /usr/bin/
 
 # Install influx
 RUN wget https://s3.amazonaws.com/influxdb/influxdb_0.6.5_amd64.deb -O /tmp/influxdb.deb && dpkg -i /tmp/influxdb.deb && rm /tmp/influxdb.deb

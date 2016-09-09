@@ -3,7 +3,7 @@ title: "AI Shack"
 date: 2012-06-12
 brief: "AI Shack is an online learning resource for computer vision/artificail intelligence. ~2000 people visit it everyday. Based on popular tutorial websites I learned from."
 type: project
-thumbnail: "/images/logo-aishack.png"
+thumbnail: "/img/logo-aishack.png"
 ---
 
 [AI Shack](http://aishack.in/) is a tutorial/knowlege website. You learn how artificial intelligence works. Not just the theory - but the code as well.

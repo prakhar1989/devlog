@@ -2,7 +2,7 @@
 title: "RoboCV Workshop"
 brief: "This intense 7-day workshop was done by a friend and me at my university. The goal was to improve knowledge about computer vision and controlling robots."
 type: project
-thumbnail: "/images/logo-robocv.png"
+thumbnail: "/img/logo-robocv.png"
 date: 2010-01-07
 ---
 Over the years, I’ve taken help from my seniors on campus. They were the ones who got my started in image processing. And now that we’re in the same position as them, it was time to give back. And thus came up the idea of doing a workshop on campus. Telling our juniors whatever we know about image processing and related areas, so that they can continue where we are today.

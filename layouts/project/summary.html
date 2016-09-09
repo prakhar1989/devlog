@@ -1,13 +1,9 @@
-<!-- Post -->
- <div class='row blog-project'>
-          <!--
-           Note: Titles and bylines will wrap automatically when necessary, so don't worry
-           if they get too long. You can also remove the "byline" span entirely if you don't
-           need a byline.
-          -->
-  <div class="col-lg-1"><a href='{{ .Permalink }}'><img src="{{ .Params.thumbnail }}" /> </a></div>
-  <div class="col-lg-offset-1 col-sm-9">
-      <strong><a href="{{ .Permalink }}"><small>{{ .Title }}</small></a></strong>
-      <div> {{ .Params.brief }} </div>
-  </div>
- </div>
+<li class="post-item project-item">
+    <div class="pull-left meta">
+        <div class='meta'>{{ .Date.Format .Site.Params.DateForm }}</div>
+    </div>
+    <div class='clearfix'>
+        <a class='pull-left' href="{{ .Permalink }}"><div>{{ .Title }}</div></a>
+        {{.Params.brief}}
+    </div>
+</li>

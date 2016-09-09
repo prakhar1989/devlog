@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class="page-heading">
+                {{ if eq .Title "Blog" }}
+                    Blog
+                {{ else }}
+                    {{ .Title }}
+                {{ end }}
+            </div>
+            <ul>
+                {{ if eq .Title "Blog" }}
+                    {{ range .Data.Pages.ByPublishDate }}
+                    {{ .Render "li"  }}
+                    {{ end }}
+                {{ else }}
+                    {{ range .Data.Pages.ByPublishDate }}
+                    {{ .Render "summary"  }}
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</section>
+{{ partial "footer.html" . }}
+

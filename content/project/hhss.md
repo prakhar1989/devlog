@@ -3,7 +3,7 @@ title: "The Hand Held Step Scanner"
 date: 2009-07-10
 brief: "My internship project at CSIO, Chandigarh - this was a device based on image processing to help the blind read documents on the go. I helped port certain modules over to OpenCV."
 type: project
-thumbnail: "/images/logo-hhss.png"
+thumbnail: "/img/logo-hhss.png"
 ---
 
 The HHSS is a prototype reading aid for the blind. Most such aids at the time were similar to flat-bed scanners. They weren’t portable and were limited to a certain document size. For example - you couldn’t read a newspaper with a flatbed scan device. This project at the Central Scientific Instruments Organization (in Chandigarh) aimed to get rid of this limitation.

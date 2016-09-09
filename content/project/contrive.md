@@ -3,7 +3,7 @@ title: "Contrive"
 date: 2010-01-10
 brief: "An online realtime strategy/quiz game built with GWT I built for my university's national technical festival. This was my first foray into the realm of web applications."
 type: project
-thumbnail: "/images/logo-contrive.jpg"
+thumbnail: "/img/logo-contrive.jpg"
 ---
 
 Contrive was an online quiz + strategy game held at the innovation festival, Quark 2010 at BITS-Pilani, Goa. I was to make the software for the entire thing. It seemed like a daunting task initially, considering the required functionality. But after quite a bit of effort, I was able to create the software that worked perfectly.
@@ -11,7 +11,7 @@ Contrive was an online quiz + strategy game held at the innovation festival, Qua
 ### What is Contrive?
 Contrive was an online science quiz, with a twist of strategy. You play against three other teams. You start off at one corner of the grid. The goal is to reach the center of the grid. To do that, you need to answer a series of questions. Once you answer a question, you can move in one of the four directions.
 
-![The contrive grid](/images/contrive-board.jpg)
+{{< figure title="The contrive grid" src="/img/contrive-board.jpg" >}}
 
 Now, the colour of your location decides the genre of the question. Since this is a science quiz, there are four different colours: yellow, red, blue and green. Each representing physics, mathematics, biology and chemistry. So, as you move, you can decide which type of question you want next.
 

@@ -1,50 +1,51 @@
-{{ template "theme/header.html" . }}
-<div class="container">
-<div class="row">
-{{ template "theme/navbar.html" . }}
-</div>
- <div class="row blog-content">
-  <div class="col-sm-6 blog-main col-sm-offset-2">
-   <div class="blog-header">
-   {{ template "theme/home-intro.html" . }}
-       </div>
+{{ partial "header.html" . }}
+<section class="main">
+    <div class="container">
+        <div class="content">
+            <div class='home-intro'>I'm Utkarsh Sinha and this is my blog. I'm currently a <a href='http://www.ri.cmu.edu/person.html?person_id=3975'>student at Carnegie Mellon University</a>, Pittsburgh with a specialization in <a href='http://www.ri.cmu.edu/MSCV'>Computer Vision</a>. If you're curious, find out more <a href='/about/'>about me</a>.</div>
 
-    <content>
-    <div class="blog-latest">
-     <strong>Latest blog post</strong>
-      {{ range first 1 (where .Data.Pages "Type" "post")}}
-        {{ .Render "summary" }}
-      {{ end }}
-      <a href='/post/' class='space-up pull-right btn btn-default'>All posts</a>
+            <hr/>
+
+            <div class='recent-blog'>
+                <div class="page-heading">Recently on the blog</div>
+                <ul>
+                {{ range first 7 (where .Data.Pages.ByPublishDate "Type" "blog") }}
+                    {{ .Render "li" }}
+                {{ end }}
+                <li>
+                    <div class='post-item'>
+                    <div class='meta'></div>
+
+                    <a href='/blog/'>
+                        <i class="icon ion-link"></i>
+                        All posts
+                    </a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+            <hr/>
+
+            <div class='recent-project'>
+                <div class="page-heading">Recently projects</div>
+                <ul>
+                {{ range first 1 (where .Data.Pages.ByPublishDate "Type" "project") }}
+                    {{ .Render "summary" }}
+                {{ end }}
+                <div class='post-item project-item'>
+                    <div class='meta'></div>
+                    <a href="/project/">
+                        <i class="icon ion-link"></i>
+                        All projects
+                    </a>
+                    </div>
+                </li>
+
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="blog-latest">
-     <strong>Newest Project</strong>
-      {{ range first 1 (where .Data.Pages "Type" "project")}}
-        {{ .Render "summary" }}
-      {{ end }}
-      <a href='/project/' class='space-up pull-right btn btn-default'>All projects</a>
-    </div>
-    <div class="blog-recents">
-     <strong>Recent blog posts</strong>
-      <ul>
-      {{ range first 10 (where .Data.Pages "Type" "post") }}
-        {{ if eq .Type "post" }}
-            {{ .Render "li" }}
-        {{ end }}
-      {{ end }}
-      </ul>
-      <a href="/post/" class='space-up pull-right btn btn-default'>All posts</a>
-    </div>
-    </content>
-  </div>
-  <div class="col-sm-2 blog-sidebar">
-    {{ template "theme/sidebar.html" . }}
-  </div>
-  <div class="clearfix"> </div>
-  <div class="hidden-md hidden-lg">
-    {{ template "theme/bottom-intro.html" . }}
-  </div>
-</div>
-{{ template "theme/footer.html" . }}
-</div>
-</body>
+</section>
+{{ partial "footer.html" . }}
+

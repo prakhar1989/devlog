@@ -1,11 +1,38 @@
 ---
-title: "Utkarsh Sinha"
-contentdir: "content"
-layoutdir: "layouts"
 publishdir: "public"
 indexes:
   category: "categories"
   tag: "tags"
 baseurl: "/"
 canonifyurls: true
+builddrafts: false
+contentdir: "content"
+languageCode: "en-US"
+layoutdir: "layouts"
+author: "Utkarsh Sinha"
+title: "Utkarsh Sinha"
+pygmentsuseclasses: true
+pluralizelisttitles: false
+disable404: false
+permalinks:
+  fixed: ":title/"
+  blog: "blog/:slug/"
+
+params:
+    Author: "Utkarsh Sinha"
+    CacheBuster: true
+    DateForm: "Jan 2, 2006"
+    DateFormFull: "Mon Jan 2 2006 15:04:05 MST"
+    Description: "Don't panic"
+    Email: "utkarsh@utkarshsinha.com"
+    FaviconFile: "img/leaf.ico"
+    GATracker: "UA-587551-8"
+    GitHub: "//github.com/liquidmetal"
+    HighlightJS: true
+    Initials: "US" # Displayed on single post page; DEPRECATED in v0.3.0.
+    Lang: "en"
+    LinkedIn: "//www.linkedin.com/in/sinhautkarsh"
+    Twitter: "//twitter.com/utkarshsinha"
+    Imdb: "//www.imdb.com/name/nm5069453/"
+    ExtraCssFiles: [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.
 ---
