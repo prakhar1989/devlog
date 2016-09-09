@@ -12,6 +12,9 @@
                     <div class="date" title="{{ .Date.Format .Site.Params.DateFormFull }}">{{ .Date.Format .Site.Params.DateForm }}</div>
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
                 </div>
+                {{ if .Params.thumbnail }}
+                    <img class='pull-right' src='{{.Params.thumbnail}}' />
+                {{ end }}
             </div>
             <div class="markdown">
                 {{ .Content }}
