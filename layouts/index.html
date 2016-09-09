@@ -28,7 +28,7 @@
             <hr/>
 
             <div class='recent-project'>
-                <div class="page-heading">Recently projects</div>
+                <div class="page-heading">Recent projects</div>
                 <ul>
                 {{ range first 1 (where .Data.Pages.ByPublishDate "Type" "project") }}
                     {{ .Render "summary" }}
