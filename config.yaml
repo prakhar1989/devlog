@@ -23,9 +23,9 @@ params:
     CacheBuster: true
     DateForm: "Jan 2, 2006"
     DateFormFull: "Mon Jan 2 2006 15:04:05 MST"
-    Description: "Don't panic"
+    Description: "Don't panic - you've reached the personal blog of Utkarsh Sinha"
     Email: "utkarsh@utkarshsinha.com"
-    FaviconFile: "img/leaf.ico"
+    FaviconFile: "/img/favicon.gif"
     GATracker: "UA-587551-8"
     GitHub: "//github.com/liquidmetal"
     HighlightJS: true
