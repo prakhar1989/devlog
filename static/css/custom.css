@@ -271,14 +271,16 @@ margin: auto 0;
 
 .blog-recents {
     padding-top: 2em;
+    clear: both;
 }
 
 .blog-latest {
     padding-top: 2em;
+    clear: both;
 }
 
 .blog-project {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .glyphicon {
@@ -326,4 +328,8 @@ svg .x_axis {
 
 #affiliation ul li {
     margin-bottom: 1em;
+}
+
+.space-up {
+    margin-top: 1em;
 }

@@ -15,14 +15,14 @@
       {{ range first 1 (where .Data.Pages "Type" "post")}}
         {{ .Render "summary" }}
       {{ end }}
-      <a href='/post' class='pull-right btn btn-default'>All posts</a>
+      <a href='/post/' class='space-up pull-right btn btn-default'>All posts</a>
     </div>
     <div class="blog-latest">
      <strong>Newest Project</strong>
       {{ range first 1 (where .Data.Pages "Type" "project")}}
         {{ .Render "summary" }}
       {{ end }}
-      <a href='/project' class='pull-right btn btn-default'>All projects</a>
+      <a href='/project/' class='space-up pull-right btn btn-default'>All projects</a>
     </div>
     <div class="blog-recents">
      <strong>Recent blog posts</strong>
@@ -33,7 +33,7 @@
         {{ end }}
       {{ end }}
       </ul>
-      <a href="/post" class='pull-right btn btn-default'>All posts</a>
+      <a href="/post/" class='space-up pull-right btn btn-default'>All posts</a>
     </div>
     </content>
   </div>
