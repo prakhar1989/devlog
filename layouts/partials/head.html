@@ -6,7 +6,11 @@
 {{ if eq $url "/" }}
     {{ .Site.Title }}
 {{ else }}
-    {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}
+    {{ if eq .Title .Site.Title }}
+        {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Site.Title }} {{ end }}
+    {{ else }}
+        {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} | {{ .Site.Title }} {{ end }}
+    {{ end }}
 {{ end }}
 </title>
 <link rel="canonical" href="{{ .Permalink }}">
