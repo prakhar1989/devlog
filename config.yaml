@@ -35,4 +35,5 @@ params:
     Twitter: "//twitter.com/utkarshsinha"
     Imdb: "//www.imdb.com/name/nm5069453/"
     ExtraCssFiles: [ "/css/override.css" ] # In your `static/css`, add/remove files as necessary.
+    PygmentsCodeFences: true
 ---

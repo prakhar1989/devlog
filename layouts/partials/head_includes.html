@@ -18,7 +18,7 @@
 {{ if eq true .Site.Params.CacheBuster }}
 
 <link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/pygments.css">
+<link rel="stylesheet" href="/css/colorful.css">
 <link rel="stylesheet" href="/css/main.css">
 
 {{range .Site.Params.ExtraCssFiles}}
@@ -28,7 +28,7 @@
 {{ else }}
 
 <link rel="stylesheet" href="/css/reset.css?{{ .Now.Unix }}">
-<link rel="stylesheet" href="/css/pygments.css?{{ .Now.Unix }}">
+<link rel="stylesheet" href="/css/colorful.css?{{ .Now.Unix }}">
 <link rel="stylesheet" href="/css/main.css?{{ .Now.Unix }}">
 
 {{range .Site.Params.ExtraCssFiles}}

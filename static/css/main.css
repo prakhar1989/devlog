@@ -583,6 +583,7 @@ section.main .content .markdown h1 {
 section.main .content .markdown h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  border-bottom: 1px solid #dedede;
 }
 section.main .content .markdown h3 {
   font-size: 1em;

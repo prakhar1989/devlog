@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('newpost', "Generates a new template task with the given filename", function(name) {
-        filePath = './content/post/'
+        filePath = './content/blog/'
         if (arguments.length == 0) {
             filename = "untitled.md";
             title = '"untitled"';
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         defaultContent += 'title: ' + title + '\n'
         defaultContent += 'brief: "Enter a 2-3 liner here"\n'
         defaultContent += 'date: ' + generateTodayString() + '\n'
-        defaultContent += 'type: post\n'
+        defaultContent += 'type: blog\n'
         defaultContent += 'draft: true\n'
         defaultContent += '---\n\n'
         defaultContent += "Write your post here"
