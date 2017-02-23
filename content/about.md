@@ -3,7 +3,7 @@ title: "About me"
 type: about
 brief: "Shall I use third person here?"
 ---
-I’m Utkarsh Sinha. I am 27 and specialize in making computer vision products a reality - specifically with OpenCV and C/C++. I currently work on <a href='https://www.microsoft.com/en-us/research/product/microsoftpix/'>Microsoft Pix</a>.
+I’m Utkarsh Sinha. I am 27 and specialize in computer vision. I currently work on <a href='https://www.microsoft.com/en-us/research/product/microsoftpix/'>Microsoft Pix</a>.
 
 I [graduated from Carnegie Mellon University](http://ri.cmu.edu/person.html?person_id=3975) in December 2016 from the [Computer Vision program](http://www.ri.cmu.edu/MSCV).
 
