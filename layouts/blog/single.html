@@ -16,10 +16,15 @@
             <div class="markdown">
                 {{ .Content }}
                 <br>
-                <p><a href="/blog/">
-                    <i class='icon ion-arrow-left-b'></i>
-                    Back to posts
-                </a></p>
+                <p class="clear-fix">
+                {{ if .NextInSection }}
+                    <a class='paging next-post' href='{{.NextInSection.Permalink}}'>{{.NextInSection.Title}} <i class='icon ion-arrow-right-b'></i></a>
+                {{ end }}
+                {{ if .PrevInSection }}
+                    <a class='paging prev-post' href='{{.PrevInSection.Permalink}}'><i class='icon ion-arrow-left-b'></i> {{.PrevInSection.Title}}</a>
+                {{ end }}</p>
+
+                <br>
             </div>
             <br>
             <div class="disqus">

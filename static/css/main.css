@@ -785,3 +785,29 @@ section.main .content .markdown figure {
 section.main .content .markdown figcaption > h4 {
     margin-top: 0;
 }
+
+.paging {
+    background-color: #efefef;
+    border: #ddd 1px solid;
+    padding: 0.6em;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.prev-post {
+    float: left;
+}
+
+.next-post {
+    float: right;
+}
+
+.hugo {
+    opacity: 0.9;
+}
+
+.hugo:hover {
+    opacity: 1;
+}
