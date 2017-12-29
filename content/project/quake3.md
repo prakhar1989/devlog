@@ -1,7 +1,7 @@
 ---
 title: "Quake 3 based 3D game engine"
 date: 2006-09-23
-brief: "My experiments with understanding how game engines work"
+brief: "My experiments with understanding how game engines attempt to wrangle different facets of computing. I dove deep into the computer graphics aspects"
 type: project
 ---
 
