@@ -5,7 +5,7 @@ date: 2018-01-05
 type: blog
 ---
 
-Time is money they say. Knowing the worth of your time as a dollar amount per hour can be eye opening. Often, time is billed for working hours only - however, there can be sickness, vacations, family time and side projects. Factoring these into your equations could lead a different view. Since this is just the start of the year, it's a good excuse to start tracking these things. In fact, this aligns with the idea of the [quantified self](https://en.wikipedia.org/wiki/Quantified_self).
+Time is money they say. Knowing the worth of your time as a dollar amount per hour can be eye opening. Often, time is billed for working hours only - however, there can be sickness, vacations, family time and side projects. Factoring these into your equations could lead to a different view. Since this is just the start of the year, it's a good excuse to start tracking these things. In fact, this aligns with the idea of the [quantified self](https://en.wikipedia.org/wiki/Quantified_self).
 
 ## Toggl
 [Toggl](https://toggl.com/) to track time is almost exactly what's needed for this. Toggl lets you define projects ("Meetings", "Office", "Sleep") and lets you track time for each of them. The tool seems to be primarily geared towards freelancers who work for clients or have an hourly rate. I don't use those settings just yet - but I can imagine a few scenarios where this might be useful.
@@ -29,7 +29,7 @@ This task accomplishes the following:
 - Start the sleep timer
 - Activate the sleep tracking app
 - Set an alarm to an appropriate time
-- Turn of all wifi lights in the house
+- Turn off all wifi lights in the house
 
 ### Commute
 
