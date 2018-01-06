@@ -1,8 +1,10 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 # Install dependencies
-RUN apt-get update &&apt-get upgrade -y
-RUN apt-get install -y nginx wget supervisor gccgo node npm
+RUN apt-get update
+RUN apt-get install -y nginx wget supervisor gccgo nodejs npm
+RUN apt-get upgrade -y
+RUN npm install npm -g
 
 # Install node stuff
 RUN ln -s /usr/bin/nodejs /usr/bin/node
@@ -26,7 +28,8 @@ RUN cd /work/dynamic/ambience && gccgo -g main.go -o /dynamic/ambience
 RUN cd /work/dynamic/getip && gccgo -g main.go -o /dynamic/getip
 #ADD dynamic/ambience/ambience /dynamic/ambience
 #ADD dynamic/getip/getip /dynamic/getip
-RUN cd /work/ && npm install grunt execSync && ./node_modules/grunt/bin/grunt generate
+RUN cd /work/ && npm install grunt execSync
+RUN cd /work/ && ./node_modules/grunt/bin/grunt generate
 
 # Setup supervisord
 COPY supervisord.conf /etc/supervisor/supervisord.conf
