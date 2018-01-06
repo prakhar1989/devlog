@@ -811,3 +811,6 @@ section.main .content .markdown figcaption > h4 {
 .hugo:hover {
     opacity: 1;
 }
+section.main .content .markdown ul {
+    margin-left: 2em;
+}

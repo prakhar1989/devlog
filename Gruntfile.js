@@ -86,7 +86,7 @@ module.exports = function(grunt) {
         // Generate a date that hugo can understand
         today = new Date()
         year = today.getFullYear()
-        month = today.getMonth()
+        month = today.getMonth() + 1
         day = today.getDate()
 
         strDate  = year + '-'
