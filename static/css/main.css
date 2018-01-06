@@ -814,3 +814,7 @@ section.main .content .markdown figcaption > h4 {
 section.main .content .markdown ul {
     margin-left: 2em;
 }
+section.main .content .markdown img {
+    margin: auto;
+    display: block;
+}

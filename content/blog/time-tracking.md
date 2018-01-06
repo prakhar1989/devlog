@@ -12,10 +12,15 @@ Time is money they say. Knowing the worth of your time as a dollar amount per ho
 
 The webapp and mobile app allow you to start timers and edit your records. However, this is somewhat cumbersome - we'll see a better way later.
 
+
 ## Tasker
 I consider [Tasker](http://tasker.dinglisch.net/) a visual programming language app. It lets you work with dates, time, location, other apps, launch REST API calls - all from within a visual environment. It even lets you write javascript code if these tools are not sufficient.
 
+![Tasker tasks](/img/tasker-tasks.png)
+
 One of the nice things about Tasker is it lets you execute tasks and execute them from other tasks. This lets you build hierarchies of tasks with shared variables - almost like subroutines.
+
+![Tasker REST calls](/img/tasker-rest.png)
 
 ## Tasker + Toggl
 Using [Toggl's REST API](https://github.com/toggl/toggl_api_docs/blob/master/toggl_api.md), it is possible to build tasks that [start and stop timers](https://github.com/toggl/toggl_api_docs/blob/master/chapters/time_entries.md). It is possible to request the currently running timer, stop it and start a new timer.
@@ -30,6 +35,8 @@ This task accomplishes the following:
 - Activate the sleep tracking app
 - Set an alarm to an appropriate time
 - Turn off all wifi lights in the house
+
+![The Sleep Task](/img/sleep-task.png)
 
 ### Commute
 
@@ -57,3 +64,5 @@ Another issue is with REST calls. This could be a Tasker issue or Toggl's API is
 
 ## Conclusion
 I've been using this system for a couple of weeks now. However, most of my time has just been personal time from the end-of-year vacations. As the weeks progress, hopefully I'll have more unbiased data about my use of time. Hopefully, I'll be able to gain some value out of it.
+
+![Time tracking reports with Toggl](/img/toggl-time-jan-2018.png)
