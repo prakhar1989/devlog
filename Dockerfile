@@ -3,8 +3,8 @@ FROM ubuntu:16.04
 # Install dependencies
 RUN apt-get update
 RUN apt-get install -y nginx wget supervisor gccgo nodejs npm g++
-RUN apt-get upgrade -y
 RUN npm install npm -g
+RUN apt-get upgrade -y
 
 # Install node stuff
 RUN ln -s /usr/bin/nodejs /usr/bin/node

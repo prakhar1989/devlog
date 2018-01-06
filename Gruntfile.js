@@ -58,13 +58,8 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('generate', "Removes existing static website and regenerates it", function() {
-        var sh = require('execSync')
-        code = sh.run('hugo')
-        if(code==0) {
-            grunt.log.writeln('Blog generated successfully')
-        } else {
-            grunt.log.writeln('There was an error running hugo (' + code + ')')
-        }
+        var sh = require('child_process')
+        code = sh.execFileSync('hugo', [])
     });
 
     grunt.registerTask('deploy', "Deploys the latest set of files to my host", function() {
