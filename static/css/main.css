@@ -818,3 +818,12 @@ section.main .content .markdown img {
     margin: auto;
     display: block;
 }
+
+twitterwidget {
+    text-align: center; 
+    padding-left: 5px;
+    margin:0 auto;
+    width:auto;
+    display:table
+}
+

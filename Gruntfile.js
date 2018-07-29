@@ -63,12 +63,11 @@ module.exports = function(grunt) {
     });
 
     grunt.registerTask('deploy', "Deploys the latest set of files to my host", function() {
-        var sh = require('execSync')
+        var sh = require('child_process')
         var user = 'utkarsh'
         var server = 'utkarshsinha.com'
-        var globalLocation = 'srv/'
-        var publicLocation = 'public_html'
-        var code = sh.run('rsync ./public/ ' + user + '@' + server + ':/' + globalLocation + server + '/' + publicLocation + ' -r')
+        var globalLocation = 'work/devlog'
+        var code = sh.execSync('rsync ./public/ ' + user + '@' + server + ':/' + globalLocation + '/' + ' -r')
 
         if(code==0) {
             grunt.log.writeln('The deploy was successful')
