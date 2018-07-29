@@ -10,7 +10,7 @@ Since Satya Nadella took over as CEO, he has been transforming Microsoft on the 
 At a staggering ~24k participants and ~6k projects worldwide, the range of technology used in this hackathon incredible. From [Hololens](https://www.microsoft.com/en-us/hololens) and [brain-computer interfaces](https://www.emotiv.com/epoc/) to [robotics](https://www.rethinkrobotics.com/intera/) and artificial intelligence - it was all here. Putting together a prototype requires a level of skill and hustle that Microsoft hopes to leverage as it continues being a worthy competitor to the likes of Google, Facebook and Amazon.
 
 ## Hackathon 2017
-My last year's hackathon project was titled Deep Comic. The idea was to take a video and generate a 3-frame comic strip. The user could then add speed bubbles on top of the image and share it with their friends. This was all done on a standard Android device without any need for an internet connection.
+My last year's hackathon project was titled Deep Comic. The idea was to take a video and generate a 3-frame comic strip. The user could then add speech bubbles on top of the image and share it with their friends. This was all done on a standard Android device without any need for an internet connection.
 
 The team of four that made everything happen included: Me, Noranart Vesdapunt, Kandarp Makwana and Melissa Regalia. Our project created a good amount of buzz during the show-and-tell "Science Fair" and we ended up being placed 3rd in the "Millenial" category.
 
